@@ -9,6 +9,8 @@ import {
 } from 'react-router-dom'
 import Home from './components/Home';
 import IsWord from './components/IsWord';
+import WordColor from './components/WordColor';
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
           <Route path='/' element={<Home />}/>
           <Route path='/:wordo' element={<IsWord />}/>
           <Route path='/:num' element={<IsWord />}/>
+          <Route path='/:word/:textColor/:backgroundColor' element={<WordColor />}/>
         </Routes>
       </BrowserRouter>
     </div>
